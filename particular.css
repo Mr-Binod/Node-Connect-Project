@@ -1,0 +1,119 @@
+#titleBar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.855);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    cursor: pointer;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3%;
+    color: rgba(219, 193, 100, 0.897);
+}
+.isactive span:nth-child(1) {
+    transform: translateY(50%) rotate(-45deg);
+    top: 35%;
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap
+}
+.isactive span:nth-child(3) {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+    
+}
+
+.isactive .hamBtn span:nth-child(2) {
+    display: none;
+}
+.hamBtn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    padding-right: 30px;
+}
+.hamBtn span {
+    top: 50%;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(224, 221, 221);
+    position: absolute; 
+    transform: translateY(-50%);
+    /* display: none; */
+}
+.hamBtn span:nth-child(1) {
+    position: absolute;
+    top: 23%;transform: translateY(-50%);
+}
+.hamBtn span:nth-child(3) {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+
+
+.hamBtn:hover  > span {
+    background-color: rgb(148, 148, 148);
+}
+
+
+.comment-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+span .nickname{
+    padding-left: 1400px;
+}
+.nickname {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.rating-container {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: #ffca08;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+}
+#comment_list div button {
+    margin-right: 7px;
+}
